@@ -2,8 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-# import necessary libraries for the project
-
+# import necessary libraries
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
