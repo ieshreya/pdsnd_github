@@ -2,8 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-# import necessary libraries for the project
-
+# import necessary libraries
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -22,7 +21,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-   # take user input for name of city (chicago,new york,washington).
+   # take user input for city name (chicago,new york,washington).
     while True:
         city = input("Enter one of the cities you want to see data for:\n Chicago, New York, Washington\n").lower()
         if city in cities:
@@ -58,7 +57,7 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-# load required file into data frame
+# load required file into dataframe
     df = pd.read_csv(CITY_DATA[city])
 
 # convert Start Time and End Time columns into correct date format yyyy-mm-dd
