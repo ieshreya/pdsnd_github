@@ -64,12 +64,12 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
 
-# Take out month from Start Time into new column named month
+# Take out month from Start Time into new column 'month'
     df['month'] = df['Start Time'].dt.month
 
 # filter by month
     if month != 'all':
-   # Make use of index of months list to get corresponding integer value
+   # Using index of months list to get corresponding integer value
       months = ['january', 'february', 'march', 'april', 'may', 'june']
       month = months.index(month) + 1
 
