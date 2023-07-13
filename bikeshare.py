@@ -21,7 +21,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-   # take user input for name of city (chicago,new york,washington).
+   # take user input for city name (chicago,new york,washington).
     while True:
         city = input("Enter one of the cities you want to see data for:\n Chicago, New York, Washington\n").lower()
         if city in cities:
@@ -57,19 +57,19 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-# load required file into data frame
+# load required file into dataframe
     df = pd.read_csv(CITY_DATA[city])
 
 # convert Start Time and End Time columns into correct date format yyyy-mm-dd
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
 
-# Take out month from Start Time into new column named month
+# Take out month from Start Time into new column 'month'
     df['month'] = df['Start Time'].dt.month
 
 # filter by month
     if month != 'all':
-   # Make use of index of months list to get corresponding integer value
+   # Using index of months list to get corresponding integer value
       months = ['january', 'february', 'march', 'april', 'may', 'june']
       month = months.index(month) + 1
 
