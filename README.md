@@ -1,17 +1,14 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
-Include the date you created this project and README file.
+The project was completed on 04/07/2023.
 
 ### Project Title
-Replace the Project Title
+Exploring US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+This project is a part of Udacity Nanodegree Project. It intended to explore the bikeshare data across the United States. The Python script enables a user to choose the data (Chicago, New York, Washington) he/she wants to analyse and can apply various filters. 
 
 ### Files used
-Include the files used
+`bikeshare.py` - A python script that provides detailed stats for U.S. bikeshare data as requested by a user. 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+The repository is forked from [Udacity’s GitHub Project repository](https://github.com/udacity/pdsnd_github).
